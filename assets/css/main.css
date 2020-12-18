@@ -1,0 +1,208 @@
+.top {
+	position: relative;
+	background-color: #04204a1a;
+	height: 10%;
+	line-height: 50px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.the-world {
+	font-family: monospace;
+	margin-top: 2%;
+	float: right;
+	font-size: 15px;
+	margin-right: 5%;
+}
+
+.logo1 {
+	position: relative;
+	margin-left: 5%;
+}
+
+@media screen and (min-width: 420px) {
+	.navbar-toggler {
+			margin-left: 55%;
+		}
+	}
+
+@media screen and (max-width: 1200px) {
+	.top {
+		display: none;
+		/*position: relative;
+		background-color: #04204a1a;
+		height: 10%;
+		line-height: 50px;
+		overflow: hidden;
+		z-index: 2;*/
+	}
+
+	.the-world {
+		display: none;
+		/*font-family: monospace;
+		margin-top: 1%;
+		float: right;
+		font-size: 15px;
+		margin-right: 5%;*/
+	}
+
+	.logo1 {
+		display: none;
+		/*font-family: monospace;
+		font-weight: bold;
+		line-height: 1;
+		font-size: 37px;
+		letter-spacing: 3px;
+		color: #343a40;
+		display: block;
+		position: absolute;
+		margin-top: 1%;
+		margin-left: 5%;*/
+	}
+}
+
+.bg-dark {
+	background-color: #0056b3 !important;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 28px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+	margin: 0 15px;
+} 
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.section-title-border {
+    width: 100px;
+    height: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:  #0056b3;
+
+}
+
+/* Pelayanan */
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.padding-top-30 {
+    padding-top: 30px;
+}
+
+.services-box i {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.text-custom, .read-btn, .navbar-custom.navbar-white .navbar-nav li.active a, .navbar-custom.navbar-white .navbar-nav li a:hover, .navbar-custom.navbar-white .navbar-nav li a:focus, .navbar-custom.navbar-white .navbar-nav li a:active, .play-btn, .blog-title:hover, .social-icon:hover i {
+    color: #1b5abc !important;
+}
+
+div.card {
+    width: 250px;
+    box-shadow: 0 3px 3px 0 rgba(34, 31, 31, 0.33), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.card-deck {
+	position: relative;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.card-title{
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.card-text {
+	text-align: center;
+}
+
+.card-footer {
+	text-align: center;
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 401px) {
+		.card {
+			width: 100%;
+			margin-left: 11%;
+		}	
+	}
+	@media screen and (max-width: 801px) {
+		#container {
+			width: 100%;
+		}
+		.card-deck, {
+			width: 100%;		
+		}
+		.card {
+			width: 100%;
+			margin-left: 10%;
+		}
+		.anu {
+			height: 50%;
+		}
+	}
+	@media screen and (max-width: 1201px) {
+		.card {
+			width: 100%;
+			margin-left: 10%;
+		}
+		.anu {
+			height: 50%;
+		}		
+	}
+	@media screen and (min-width: 1202px) {
+		.card-deck, .card {
+			width: 100%;
+			margin-left: 0.5%;
+		}
+
+		.anu {
+			width:33%;
+			height: 50%;
+			padding-left: 0.5%;
+		}
+	}
+	div.card, {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  text-align: center;
+	  border-radius: 15px;
+	}

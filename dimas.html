@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>KTB Tech</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/img/biru.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">	
+	<link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-stroke.css">
+	<script src="assets/jquery/jquery.min.js"></script>	     
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });
+
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('#menu a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#menu ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    };
+        </script>
+</head>
+<body>
+	<!-- Navbar Disini -->
+	<div class="container-fluid top">
+		<a class="logo1" href="#" style="text-decoration: none;"><img src="assets/img/hitam.png" alt=""></a>
+		<div class="the-world">The Best Software Development Company in The World</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container">
+		  <a class="navbar-brand" href="#">KTB-Tech</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <!-- Pisah Ke Kanan -->
+		  <div class="col-auto" style="margin-left: 10%;">
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html#beranda">Beranda</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html#pelayanan">Pelayanan</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html#project">Projek</a>
+		      </li>		     
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html#contact">Hubungi Kami</a>
+		      </li>		 		        		       
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Tentang Kami
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="anelka.html">Anelka</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="dimas.html">Dimas</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				    <!-- Search form -->
+				    <form class="form-inline mr-auto">
+				      <div class="md-form my-0">
+				        <input class="form-control mr-sm" type="text" placeholder="Search" aria-label="Search">
+				      </div>
+				    </form>
+				  </div>
+		      </li>			      
+		    </ul>
+		  </div>
+		  </div> <!-- Akhir Pisah Ke Kanan -->
+	  </div>
+	</nav><br>	<!-- Akhir dari navigasi -->
+	<div id="container" class="container">
+		<center>
+		<div class="card-deck">
+		  <div class="card">
+		    <img class="img-thumbnail rounded-circle" src="assets/img/dimas.jpg" alt="circuular image" style="width: 80%; margin-left: 10%; margin-top: 10%;">
+		    <div class="card-body">
+		      <h5 class="card-title" style="color: blue;">Dimas Satria</h5>
+		      <h6 class="card-title"><b>Front End Enthusiast</b></h6>
+		      <small class="card-text">Menjadi seorang desainer website adalah salah satu yang saya senangi. Ya intine saya suka front-end nya saja, back-end nya biar orang lain xixixi</small>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted"><i class="fa fa-user" aria-hidden="true"></i> Tentang Saya</small>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-body">
+		      <p class="text-muted" style="margin-top: 10%;">Hai teman-teman, nama Saya <code>Dimas Satria Sandi Pradana</code>. Saya lahir di <code>Karanganyar</code> pada <code>30 Agustus 2001</code>. Sekarang Saya berkuliah di <code>Universitas Sebelas Maret</code> dan mengambil Program Study <code>Pendidikan TIK</code>. Keseharian ku ya sama halnya seperti mahasiswa-mahasiswa lainnya, namun dirumah saya juga memiliki pekerjaan sampingan, menjadi joki game Online hehe dan juga menjadi orang yang bisa berguna bagi orang lain. Oh iya, Saya tinggal di <code>Jatiyoso</code>. Salam kenal!</p><br>
+		      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue velit nec congue ullamcorper. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent et lectus quis erat luctus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sed vulputate massa, at finibus quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vestibulum ultrices aliquam. In at ullamcorper magna. Cras sed enim vel tortor sagittis pellentesque. Suspendisse at massa ac risus suscipit maximus.</p><br>
+		      <p class="card-text"><b>Temui Saya Di!</b></p>
+		      <a href="https://github.com/DimasSSP"><i class="fa fa-github" aria-hidden="true"></i></a>	      
+		      <a href="https://www.facebook.com/Dimas Satria"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		      <a href="https://twitter.com/Dimas Satria"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		      <a href="https://instagram.com/dimpellor"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		      <a href="http://github.com/DimasSSP"><i class="fa fa-behance" aria-hidden="true"></i></a>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted"><i class="fa fa-user" aria-hidden="true"></i> Biodata Saya</small>
+		    </div>
+		  </div>
+		</div></center>
+	</div>
+	<div>
+		<footer class="text-white text-left text-lg-start" style="background-color: #0c68ba">
+		  <!-- Grid container -->
+		  <div class="container p-4">
+		    <!--Grid row-->
+		    <div class="row">
+		      <!--Grid column-->
+		      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+		      	<a class="logo1" href="#" style="text-decoration: none;"><img src="assets/img/putih-asli.png" alt="" width= "50%";></a>
+		        <p>
+		          KTB Group adalah perusahaan parodi dari sebuah komunitas sharing di Pendidikan TIK angkatan 2019. Semoga berawal dari parodi bisa menjadi kenyataan. 
+		        </p>
+		      </div>
+		      <!--Grid column-->
+
+		      <!--Grid column-->
+		      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		        <h5 class="text-uppercase">Jasa Yang Lain</h5>
+
+		        <ul class="list-unstyled mb-0">
+		          <li>
+		            <a href="#!" class="text-white">Jadi MC</a>
+		          </li>
+		          <li>
+		            <a href="#!" class="text-white">Konten Prank</a>
+		          </li>
+		          <li>
+		            <a href="#!" class="text-white">Ngamen Di Cafe</a>
+		          </li>
+		          <li>
+		            <a href="#!" class="text-white">Konten Mukbang</a>
+		          </li>
+		          <li>
+		            <a href="#!" class="text-white">Yang ini belum kepikiran apa yang lucu</a>
+		          </li>
+		        </ul>
+		      </div>
+		      <!--Grid column-->
+
+		      <!--Grid column-->
+		      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		        <h5 class="text-uppercase mb-0">Temukan Kami</h5><br>
+		        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.165718941917!2d110.78421031437404!3d-7.556902576716003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1438df1090b1%3A0xf41d462ab5a8cd9f!2sKantor%20Samsat%20Solo!5e0!3m2!1sid!2sid!4v1608195727953!5m2!1sid!2sid" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		      </div>
+		      <!--Grid column-->
+		    </div>
+		    <!--Grid row-->
+		  </div>
+		  <!-- Grid container -->
+
+		  <!-- Copyright -->
+		  <div class="text-center p-3" style="background-color: #0056b3">
+		    Crafted with <span style="color: red;">&#9829;</span> by
+		    <a class="text-white" href="https://ktbteam.my.id/">KTB Devs</a>
+		  </div>
+		  <!-- Copyright -->
+		</footer>
+	</div>
+</body>
+</html>	
