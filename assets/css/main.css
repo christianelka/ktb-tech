@@ -159,11 +159,14 @@ div.card {
 	font-size: 1rem;
 }
 
-@media screen and (max-width: 401px) {
-		.card {
+@media screen and (max-width: 500px) {
+/*		.card {
 			width: 100%;
 			margin-left: 11%;
-		}	
+		}	*/
+		.navbar-brand {
+			font-size: 20px;
+		}
 	}
 	@media screen and (max-width: 801px) {
 		#container {
